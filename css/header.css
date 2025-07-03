@@ -1,0 +1,75 @@
+#menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+ul {
+  list-style-type: none;
+  /* Supprime les puces */
+}
+
+.boitenomlogo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a:hover {
+  color: rgb(3, 169, 100);
+}
+
+a {
+  color: rgb(4, 97, 14);
+}
+
+#menu-toggle {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background-color: none;
+  border: none;
+  margin-left: 20px;
+}
+
+#menu-list {
+  display: none;
+  list-style: none;
+}
+
+#menu-list.active {
+  display: flex;
+}
+
+.nav-toggle-item {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  display: block;
+  position: absolute;
+}
+
+.nav-toggle-item:nth-child(1) {
+  top: 0;
+}
+
+.nav-toggle-item:nth-child(2) {
+  top: 8px;
+}
+
+.nav-toggle-item:nth-child(3) {
+  top: 16px;
+}
+
+#menu-toggle.expanded .nav-toggle-item:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.expanded .nav-toggle-item:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#menu-toggle.expanded .nav-toggle-item:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}

@@ -1,0 +1,41 @@
+@import url("/css/header.css");
+@import url("/css/mesvideos.css");
+@import url("/css/mesdessins.css");
+@import url("/css/responsive.css");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* */
+p,h1 ,h2 {
+    margin: 10px 20px;
+    padding: 20px ;
+    color:rgb(3, 169, 100);
+}
+p {
+    font-size: 16px;
+    
+    }
+.presentation{
+    display: flex;
+    justify-content:center;
+}
+
+
+
+
+
+    
+
+    

@@ -1,0 +1,14 @@
+
+
+/* application sur la galerie video + légende*/
+.grosseboite{ 
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+}
+
+.legende{
+   display: flex;
+   justify-content: center;
+}
