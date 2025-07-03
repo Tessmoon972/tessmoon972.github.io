@@ -45,7 +45,7 @@ a {
 .nav-toggle-item {
   width: 30px;
   height: 5px;
-  background-color: black;
+  background-color: rgb(3, 169, 100);
   display: block;
   position: absolute;
 }
@@ -73,3 +73,4 @@ a {
 #menu-toggle.expanded .nav-toggle-item:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+ 
