@@ -51,9 +51,9 @@ fetch('/composants/footer.html')
     console.error('Erreur :', error);
   });
 
-
-// test galerie
-let slideIndex = 1;
+  // test galerie
+/*
+0  let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -66,7 +66,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+//function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
@@ -82,5 +82,25 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-}
+} */
+
+//Galerie clickable
+
+const images = document.querySelectorAll('.galerie img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+// Affiche l’image cliquée dans la lightbox
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+// Ferme la lightbox au clic
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
 

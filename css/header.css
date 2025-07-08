@@ -73,4 +73,13 @@ a {
 #menu-toggle.expanded .nav-toggle-item:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
- 
+
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
