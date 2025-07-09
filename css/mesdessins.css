@@ -31,6 +31,17 @@ body {
   transform: scale(1.05);
 }
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 /* Lightbox (agrandissement) */
 .lightbox {
   position: fixed;
