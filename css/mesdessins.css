@@ -31,17 +31,42 @@ body {
   transform: scale(1.05);
 }
 
+.galerie-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galerie-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+/* Texte centré au survol */
 .overlay {
   position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
 }
+
+.galerie-item:hover img {
+  transform: scale(1.05);
+}
+
+.galerie-item:hover .overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
 /* Lightbox (agrandissement) */
 .lightbox {
   position: fixed;
