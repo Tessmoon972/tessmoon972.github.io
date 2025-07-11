@@ -74,12 +74,19 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+#menu-toggle {
+  display: none;
+}
+ #menu-list {
+    display: flex;
+  }
+
 @media (max-width: 768px) {
-    .menu-list {
-        display: none;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
+  #menu-list {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
 }
