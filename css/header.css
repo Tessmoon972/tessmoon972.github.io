@@ -80,13 +80,3 @@ a {
  #menu-list {
     display: flex;
   }
-
-@media (max-width: 768px) {
-  #menu-list {
-    display: none;
-  }
-
-  #menu-toggle {
-    display: block;
-  }
-}
